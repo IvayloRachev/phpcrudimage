@@ -25,34 +25,23 @@ require './header.php';
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($films as $element): ?>
-                    <tr>
-                        <th scope="row"><?= $element->id ?></th>
-                        <td><?= $element->titre ?></td>
-                        <td><?= $element->annee ?></td>
-                        <td><img src="<?= $element->image ?>" width="200"></td>
-                        <td>
-                            <button type="button" class="btn btn-success">Editer</button>
-                            <button type="button" class="btn btn-danger">Supprimer</button>
-                        </td>
-                    </tr>
+                    <?php foreach ($films as $element) : ?>
+                        <tr>
+                            <th scope="row"><?= $element->id ?></th>
+                            <td><?= $element->titre ?></td>
+                            <td><?= $element->annee ?></td>
+                            <td><img src="<?= $element->image ?>" width="200"></td>
+                            <td>
+                                <button type="button" class="btn btn-success">Editer</button>
+                                <button type="button" class="btn btn-danger">Supprimer</button>
+                            </td>
+                        </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
-
-
         </div>
-
     </div>
-
-
 </div>
-
-
-
-
-
-
 <?php
 require './footer.php';
 ?>

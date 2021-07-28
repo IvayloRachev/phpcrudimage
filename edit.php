@@ -57,14 +57,15 @@ require './header.php';
             <form method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label>Titre</label>
-                    <input type="text" class="form-control" name="titre">
+                    <input type="text" class="form-control" name="titre" value="<?=$film->titre ?>">
                 </div>
                 <div class="form-group">
                     <label>Date</label>
-                    <input type="date" class="form-control" name="annee">
+                    <input type="date" class="form-control" name="annee" value="<?=$film->annee ?>">
                 </div>
                 <div class="form-group">
                     <label>Image</label>
+                    <img src="<?=$film->image ?>">
                     <input type="file" class="form-control" name="image">
                 </div>
                 <button type="submit" class="btn btn-primary">Ajouter</button>

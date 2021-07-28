@@ -32,8 +32,8 @@ require './header.php';
                             <td><?= $element->annee ?></td>
                             <td><img src="<?= $element->image ?>" width="200"></td>
                             <td>
-                                <button type="button" class="btn btn-success">Editer</button>
-                                <button type="button" class="btn btn-danger">Supprimer</button>
+                                <a href="./edit.php?id=<?= $element->id ?>" type="button" class="btn btn-success">Editer</a>
+                                <a href="./delete.php?id=<?= $element->id ?>" type="button" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
